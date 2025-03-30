@@ -1,0 +1,44 @@
+using System;
+
+class Fantasma
+{
+    // Atributos
+    public string Habilidade { get; set; }
+    public string Nick { get; set; }
+    public string Cor { get; set; }
+
+    // Construtor
+    public Fantasma(string habilidade, string nick, string cor)
+    {
+        Habilidade = habilidade;
+        Nick = nick;
+        Cor = cor;
+    }
+
+    // Método para gerar o fantasma (imprimir atributos)
+    public void GerarFantasma()
+    {
+        Console.WriteLine($"Fantasma criado - Nick: {Nick}, Cor: {Cor}, Habilidade: {Habilidade}");
+    }
+
+    // Método para mover o fantasma
+    public void Mover(string direcao)
+    {
+        Console.WriteLine($"{Nick} se moveu para {direcao}");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Criando um fantasma
+        Fantasma fantasma1 = new Fantasma("Atravesar paredes", "Blinky", "Vermelho");
+        
+        // Exibir os atributos do fantasma
+        fantasma1.GerarFantasma();
+        
+        // Movendo o fantasma
+        fantasma1.Mover("direita");
+    }
+}
