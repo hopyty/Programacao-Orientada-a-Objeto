@@ -10,8 +10,8 @@ Este repositório reúne exercícios, projetos e anotações relacionadas à dis
 - **📁 Anotações** → Materiais de estudo e resumos sobre os conceitos abordados.  
 
 ## 🛠️ Tecnologias  
-- **Linguagem:** Java (ou outra, dependendo da disciplina)  
-- **IDE:** IntelliJ / Eclipse / NetBeans  
+- **Linguagem:** C# (ou outra, dependendo da disciplina)  
+- **IDE:** VS Code / IntelliJ / Eclipse / NetBeans  
 
 ## 🎯 Sobre a Disciplina  
 A disciplina de **POO1** tem como foco ensinar os fundamentos da Programação Orientada a Objetos, preparando os alunos para escrever código modular, reutilizável e escalável.  
