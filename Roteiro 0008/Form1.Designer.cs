@@ -35,6 +35,7 @@
             label1 = new Label();
             button1 = new Button();
             panel2 = new Panel();
+            button8 = new Button();
             button7 = new Button();
             button6 = new Button();
             button2 = new Button();
@@ -92,11 +93,11 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(15, 12);
             label1.Name = "label1";
-            label1.Size = new Size(114, 32);
+            label1.Size = new Size(246, 32);
             label1.TabIndex = 1;
-            label1.Text = "Meu Site";
+            label1.Text = "Controle de Estoque";
             // 
             // button1
             // 
@@ -117,6 +118,7 @@
             // panel2
             // 
             panel2.BackColor = Color.Teal;
+            panel2.Controls.Add(button8);
             panel2.Controls.Add(button7);
             panel2.Controls.Add(button6);
             panel2.Controls.Add(button2);
@@ -125,6 +127,24 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(156, 372);
             panel2.TabIndex = 1;
+            // 
+            // button8
+            // 
+            button8.FlatAppearance.BorderColor = Color.White;
+            button8.FlatAppearance.BorderSize = 0;
+            button8.FlatAppearance.MouseDownBackColor = Color.White;
+            button8.FlatAppearance.MouseOverBackColor = Color.Goldenrod;
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button8.Image = (Image)resources.GetObject("button8.Image");
+            button8.ImageAlign = ContentAlignment.MiddleLeft;
+            button8.Location = new Point(3, 230);
+            button8.Name = "button8";
+            button8.Size = new Size(150, 23);
+            button8.TabIndex = 3;
+            button8.Text = "DashBoard";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button7
             // 
@@ -211,5 +231,6 @@
         private Button button5;
         private Button button7;
         private Button button6;
+        private Button button8;
     }
 }
